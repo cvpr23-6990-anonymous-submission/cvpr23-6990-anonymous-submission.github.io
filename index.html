@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Distilling Neural Fields for Real-Time Articulated Shape Reconstruction</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                Distilling Neural Fields for Real-Time <br> Articulated Shape Reconstruction </br>
+                <small>CVPR 2023 Rebuttal (Anonymous Submission)</small>
+            </h2>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify">
+We thank reviewers for reading the supplementary video results for the rebuttal. Please see the embedded MP4 files below containing video results following the ablations requested by the reviewers.
+<br><br>
+This page was last modified on Jan 31 2023 at 11pm PT. The full commit history of this page is available <a href="https://github.com/cvpr23-6990-anonymous-submission/cvpr23-6990-anonymous-submission.github.io">on Github</a>, so the reviewers can verify that it was not modified after the rebuttal deadline. To remain within anonymity guidelines, the email and Github account associated with this repository were both newly created.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Video Results on Humans</h3>
+                <p class="text-justify">
+From left to right: (1) The input image, (2) Articulated shape and texture predictions, (3) Comparison to BANMo, and (4-6) Predicted geometry from three views
+                </p>
+                <video id="human_T_swing1" width="100%" autoplay loop muted>
+                  <source src="img/human_results/T_swing1.mp4" type="video/mp4" />
+                </video>
+                <video id="human_T_samba1" width="100%" autoplay loop muted>
+                  <source src="img/human_results/T_samba1.mp4" type="video/mp4" />
+                </video>
+                <video id="human_D_bouncing1" width="100%" autoplay loop muted>
+                  <source src="img/human_results/D_bouncing1.mp4" type="video/mp4" />
+                </video>
+                <video id="human_franzi" width="100%" autoplay loop muted>
+                  <source src="img/human_results/franzi.mp4" type="video/mp4" />
+                </video>
+                <video id="human_pablo" width="100%" autoplay loop muted>
+                  <source src="img/human_results/pablo.mp4" type="video/mp4" />
+                </video>
+                <video id="human_I_crane1" width="100%" autoplay loop muted>
+                  <source src="img/human_results/I_crane1.mp4" type="video/mp4" />
+                </video>
+                <video id="human_I_jumping1" width="100%" autoplay loop muted>
+                  <source src="img/human_results/I_jumping1.mp4" type="video/mp4" />
+                </video>
+                <video id="human_D_handstand1" width="100%" autoplay loop muted>
+                  <source src="img/human_results/D_handstand1.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+            
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Video Results on Dogs</h3>
+                <p class="text-justify">
+From left to right: (1) The input image, (2) Articulated shape and texture predictions, (3) Comparison to BARC, (4) Comparison to BANMo, and (5-7) Predicted geometry from three views
+                </p>
+                <video id="dog_dog-dualrig-fgbg000" width="100%" autoplay loop muted>
+                  <source src="img/dog_results/dog-dualrig-fgbg000.mp4" type="video/mp4" />
+                </video>
+                <video id="dog_dog-pexel-e011" width="100%" autoplay loop muted>
+                  <source src="img/dog_results/dog-pexel-e011.mp4" type="video/mp4" />
+                </video>
+                <video id="dog_dog-pexel-r007" width="100%" autoplay loop muted>
+                  <source src="img/dog_results/dog-pexel-r007.mp4" type="video/mp4" />
+                </video>
+                <video id="dog_dog-pexel-t008" width="100%" autoplay loop muted>
+                  <source src="img/dog_results/dog-pexel-t008.mp4" type="video/mp4" />
+                </video>
+                <video id="dog_dog-pexel-t009" width="100%" autoplay loop muted>
+                  <source src="img/dog_results/dog-pexel-t009.mp4" type="video/mp4" />
+                </video>
+                <video id="dog_dog-pexel-w011" width="100%" autoplay loop muted>
+                  <source src="img/dog_results/dog-pexel-w011.mp4" type="video/mp4" />
+                </video>
+                <video id="dog_dog-pexel-y010" width="100%" autoplay loop muted>
+                  <source src="img/dog_results/dog-pexel-y010.mp4" type="video/mp4" />
+                </video>
+                <video id="dog_shiba-haru-1012" width="100%" autoplay loop muted>
+                  <source src="img/dog_results/shiba-haru-1012.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Video Results on Cats</h3>
+                <p class="text-justify">
+From left to right: (1) The input image, (2) Articulated shape and texture predictions, (3) Comparison to BANMo, and (4-6) Predicted geometry from three views
+                </p>
+                <video id="cat_catpika-dualrig-fgbg004" width="100%" autoplay loop muted>
+                  <source src="img/cat_results/catpika-dualrig-fgbg004.mp4" type="video/mp4" />
+                </video>
+                <video id="cat_cat-pexel30024" width="100%" autoplay loop muted>
+                  <source src="img/cat_results/cat-pexel30024.mp4" type="video/mp4" />
+                </video>
+                <video id="cat_cat_five004" width="100%" autoplay loop muted>
+                  <source src="img/cat_results/cat-five004.mp4" type="video/mp4" />
+                </video>
+                <video id="cat_cat-pexel20016" width="100%" autoplay loop muted>
+                  <source src="img/cat_results/cat-pexel20016.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+            
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Acknowledgements</h3>
+                <p class="text-justify">
+                The website template was borrowed from <a href="http://jonbarron.info/">Jon Barron</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
